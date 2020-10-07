@@ -1,0 +1,31 @@
+package Domaci;
+import java.util.ArrayList;
+
+public class HighestElement {
+
+	public static void main(String[] args) {
+		String radioName[] = new String[5];
+		double frequency[] = {86.9,89.5,78.5,96.8,93.5,55.3};
+		double maxElement;
+			radioName[0] = "Ami FM";
+			radioName[1] = "Palas FM";
+			radioName[2] = "Psy Trance FM";
+			radioName[3] = "Drum and Bass FM";
+			radioName[4] = "Pure Rock FM";
+			
+	
+		
+		int i;
+		maxElement = frequency[0];
+		
+		for(i=0; i<=5; i++) {
+			
+			if(frequency[i] > maxElement) maxElement = frequency[i];
+			
+				
+		}
+
+			System.out.println("\nHighest radio frequency is : " + maxElement+ " = "+radioName[0]);
+			
+	}
+}
