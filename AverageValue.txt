@@ -1,0 +1,41 @@
+package qa.domaci;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AverageValue {
+	
+	
+
+	public static void main(String[] args) {
+		
+         List<Integer> numList = new ArrayList<Integer>();
+         
+         numList.add(1);
+         numList.add(2);
+         numList.add(3);
+         numList.add(4);
+         numList.add(5);
+         
+         System.out.println(sumNumbersInList(numList)); 
+         System.out.println(getAverageValue(numList)); 
+         
+	}
+	public static int sumNumbersInList (List<Integer> numList) {
+		int sum = 0;
+		for (int i = 0; i < numList.size(); i ++) {
+			 
+		sum = sum + numList.get(i);
+		}
+		
+		return sum;
+		
+	}
+  
+	public static double getAverageValue(List<Integer> numList) {
+		
+		double averageValue = sumNumbersInList(numList) / numList.size();
+		return averageValue;
+		
+	}
+}
